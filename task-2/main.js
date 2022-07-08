@@ -1,9 +1,12 @@
-const prompt = require('prompt');
-prompt.start();
 
+let str = "328"
+let arr = str.split("")
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+  if (arr[0]>arr[arr.length-1]) {
+   console.log(arr[0]);
+  }  
+ else if (arr[0]<arr[arr.length-1]) {
+    console.log(arr[arr.length-1]);
+ }
+ else if (arr[0]==arr[arr.length-1])
+ console.log("=");
